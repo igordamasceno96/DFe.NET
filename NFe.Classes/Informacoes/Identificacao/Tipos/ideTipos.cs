@@ -191,7 +191,14 @@ namespace NFe.Classes.Informacoes.Identificacao.Tipos
         /// </summary>
         [Description("DANFe NFC-e em mensagem eletrônica")]
         [XmlEnum("5")]
-        tiMsgEletronica = 5
+        tiMsgEletronica = 5,
+        
+        /// <summary>
+        /// 6 - DANFe Simplificado Tipo 2
+        /// </summary>
+        [Description("DANFe Simplificado Tipo 2")]
+        [XmlEnum("6")]
+        tiSimplificadoTp2 = 6
     }
 
     /// <summary>
