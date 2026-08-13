@@ -67,7 +67,7 @@ namespace NFe.Classes.Informacoes.Emitente
             get { return _cpf; }
             set
             {
-                if (string.IsNullOrEmpty(value)) 
+                if (string.IsNullOrEmpty(value))
                     return;
                 if (!string.IsNullOrEmpty(_cnpj))
                     throw new ArgumentException(ErroCpfCnpjPreenchidos);

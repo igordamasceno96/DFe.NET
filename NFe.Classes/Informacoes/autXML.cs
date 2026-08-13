@@ -69,7 +69,7 @@ namespace NFe.Classes.Informacoes
                     return;
                 if (!string.IsNullOrEmpty(cnpj))
                     throw new ArgumentException(ErroCpfCnpjPreenchidos);
-    
+
                 cpf = value;
             }
         }

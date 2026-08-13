@@ -53,7 +53,7 @@ namespace CTe.Classes.Informacoes
                     return;
                 if (!string.IsNullOrEmpty(cpf))
                     throw new ArgumentException(ErroCpfCnpjPreenchidos);
-                
+
                 cnpj = value;
             }
         }

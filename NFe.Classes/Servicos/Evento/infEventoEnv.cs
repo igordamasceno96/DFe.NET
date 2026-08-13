@@ -69,7 +69,7 @@ namespace NFe.Classes.Servicos.Evento
             get { return cnpj; }
             set
             {
-                if (string.IsNullOrEmpty(value)) 
+                if (string.IsNullOrEmpty(value))
                     return;
                 if (!string.IsNullOrEmpty(cpf))
                     throw new ArgumentException(ErroCpfCnpjPreenchidos);

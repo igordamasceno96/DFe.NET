@@ -65,11 +65,11 @@ namespace NFe.Classes.Servicos.ConsultaCadastro
             get { return _ie; }
             set
             {
-                if (string.IsNullOrEmpty(value)) 
+                if (string.IsNullOrEmpty(value))
                     return;
                 if (!string.IsNullOrEmpty(CNPJ) || !string.IsNullOrEmpty(CPF))
                     throw new ArgumentException(ErroCpfCnpjIePreenchidos);
-                
+
                 _ie = value;
             }
         }
@@ -101,7 +101,7 @@ namespace NFe.Classes.Servicos.ConsultaCadastro
             get { return _cpf; }
             set
             {
-                if (string.IsNullOrEmpty(value)) 
+                if (string.IsNullOrEmpty(value))
                     return;
                 if (!string.IsNullOrEmpty(CNPJ) || !string.IsNullOrEmpty(IE))
                     throw new ArgumentException(ErroCpfCnpjIePreenchidos);

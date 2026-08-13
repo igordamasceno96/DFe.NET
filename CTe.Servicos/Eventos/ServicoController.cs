@@ -97,12 +97,7 @@ namespace CTe.Servicos.Eventos
             return retorno;
         }
 
-        public async Task<retEventoCTe> ExecutarAsync(CTeTipoEvento cTeTipoEvento,
-            int sequenciaEvento,
-            string chave, string
-            cnpj, EventoContainer container,
-            ConfiguracaoServico configuracaoServico = null, 
-            DFe.Classes.Entidades.Estado? cOrgao = null)
+        public async Task<retEventoCTe> ExecutarAsync(CTeTipoEvento cTeTipoEvento, int sequenciaEvento, string chave, string cnpj, EventoContainer container, ConfiguracaoServico configuracaoServico = null, DFe.Classes.Entidades.Estado? cOrgao = null)
         {
             var configServico = configuracaoServico ?? ConfiguracaoServico.Instancia;
 

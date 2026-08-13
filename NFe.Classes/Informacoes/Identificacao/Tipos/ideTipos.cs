@@ -148,6 +148,7 @@ namespace NFe.Classes.Informacoes.Identificacao.Tipos
     ///     <para>3 - DANFe Simplificado;</para>
     ///     <para>4 - DANFe NFC-e;</para>
     ///     <para>5 - DANFe NFC-e em mensagem eletrônica</para>
+    ///     <para>6 - DANFe Simplificado Tipo 2</para>
     /// </summary>
     public enum TipoImpressao
     {
@@ -192,7 +193,7 @@ namespace NFe.Classes.Informacoes.Identificacao.Tipos
         [Description("DANFe NFC-e em mensagem eletrônica")]
         [XmlEnum("5")]
         tiMsgEletronica = 5,
-        
+
         /// <summary>
         /// 6 - DANFe Simplificado Tipo 2
         /// </summary>
@@ -622,7 +623,7 @@ namespace NFe.Classes.Informacoes.Identificacao.Tipos
         [Description("Transferência de crédito na sucessão")]
         [XmlEnum("05")]
         TfCreditoSucessao,
-        
+
         [Description("Retorno por recusa parcial na entrega")]
         [XmlEnum("06")]
         RetornoPorRecusaParcialNaEntrega

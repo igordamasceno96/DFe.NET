@@ -58,7 +58,7 @@ namespace NFe.Classes.Servicos.Evento
             get { return _cnpj; }
             set
             {
-                if (string.IsNullOrEmpty(value)) 
+                if (string.IsNullOrEmpty(value))
                     return;
                 if (!string.IsNullOrEmpty(CPF) || !string.IsNullOrEmpty(idEstrangeiro))
                     throw new ArgumentException(ErroCpfCnpjIdEstrangeiroPreenchidos);
@@ -75,7 +75,7 @@ namespace NFe.Classes.Servicos.Evento
             get { return _cpf; }
             set
             {
-                if (string.IsNullOrEmpty(value)) 
+                if (string.IsNullOrEmpty(value))
                     return;
                 if (!string.IsNullOrEmpty(CNPJ) || !string.IsNullOrEmpty(idEstrangeiro))
                     throw new ArgumentException(ErroCpfCnpjIdEstrangeiroPreenchidos);

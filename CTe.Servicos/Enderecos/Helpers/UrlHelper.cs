@@ -56,37 +56,37 @@ namespace CTe.Servicos.Enderecos.Helpers
         {
             var configServico = configuracaoServico ?? ConfiguracaoServico.Instancia;
 
-            var _tpEmissao = tipoEmissao ?? configServico.TipoEmissao;
-            var _tpAmb = tipoAmbiente ?? configServico.tpAmb;
-            var _cUF = ufRecepcao ?? configServico.cUF;
-            var _versao = versaoLayout ?? configServico.VersaoLayout;
+            var tipoEmissaoUtilizado = tipoEmissao ?? configServico.TipoEmissao;
+            var tipoAmbienteUtilizado = tipoAmbiente ?? configServico.tpAmb;
+            var ufUtilizada = ufRecepcao ?? configServico.cUF;
+            var versaoUtilizada = versaoLayout ?? configServico.VersaoLayout;
 
-            switch (_tpAmb)
+            switch (tipoAmbienteUtilizado)
             {
                 case TipoAmbiente.Homologacao:
-                    if (_tpEmissao == tpEmis.teSVCRS)
+                    if (tipoEmissaoUtilizado == tpEmis.teSVCRS)
                     {
-                        return UrlHomologacaoSvrs(_versao);
+                        return UrlHomologacaoSvrs(versaoUtilizada);
                     }
 
-                    if (_tpEmissao == tpEmis.teSVCSP)
+                    if (tipoEmissaoUtilizado == tpEmis.teSVCSP)
                     {
-                        return UrlHomologacaoSvcsp(_versao);
+                        return UrlHomologacaoSvcsp(versaoUtilizada);
                     }
 
-                    return UrlHomologacao(_cUF, _versao);
+                    return UrlHomologacao(ufUtilizada, versaoUtilizada);
                 case TipoAmbiente.Producao:
-                    if (_tpEmissao == tpEmis.teSVCRS)
+                    if (tipoEmissaoUtilizado == tpEmis.teSVCRS)
                     {
-                        return UrlProducaoSvrs(_versao);
+                        return UrlProducaoSvrs(versaoUtilizada);
                     }
 
-                    if (_tpEmissao == tpEmis.teSVCSP)
+                    if (tipoEmissaoUtilizado == tpEmis.teSVCSP)
                     {
-                        return UrlProducaoSvcsp(_versao);
+                        return UrlProducaoSvcsp(versaoUtilizada);
                     }
 
-                    return UrlProducao(_cUF, _versao);
+                    return UrlProducao(ufUtilizada, versaoUtilizada);
             }
 
             throw new InvalidOperationException("Tipo Ambiente inválido");

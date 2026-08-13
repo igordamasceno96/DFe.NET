@@ -67,11 +67,11 @@ namespace NFe.Classes.Informacoes.Destinatario
             get { return cnpj; }
             set
             {
-                if (string.IsNullOrEmpty(value)) 
+                if (string.IsNullOrEmpty(value))
                     return;
                 if (!string.IsNullOrEmpty(cpf) || !string.IsNullOrEmpty(idEstrangeiro))
                     throw new ArgumentException(ErroCpfCnpjIdEstrangeiroPreenchidos);
-                
+
                 cnpj = value;
             }
         }
@@ -84,7 +84,7 @@ namespace NFe.Classes.Informacoes.Destinatario
             get { return cpf; }
             set
             {
-                if (string.IsNullOrEmpty(value)) 
+                if (string.IsNullOrEmpty(value))
                     return;
                 if (!string.IsNullOrEmpty(cnpj) || !string.IsNullOrEmpty(idEstrangeiro))
                     throw new ArgumentException(ErroCpfCnpjIdEstrangeiroPreenchidos);

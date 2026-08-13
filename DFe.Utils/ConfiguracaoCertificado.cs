@@ -199,14 +199,14 @@ namespace DFe.Utils
         }
 
         /// <summary>
-        ///     
+        ///
         /// </summary>
         public StoreLocation StoreLocation
         {
             get { return _storeLocation; }
             set
             {
-                if (value == _storeLocation) 
+                if (value == _storeLocation)
                     return;
                 _storeLocation = value;
             }

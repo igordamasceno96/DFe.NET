@@ -63,7 +63,7 @@ namespace CTe.Servicos.Eventos
         /// Gera o evento de desacordo de CTe
         /// </summary>
         /// <param name="configuracaoServico"></param>
-        /// <param name="orgaoEmissor">Sempre considera a UF que gerou o xml. Então a empresa pode estar configurada para uma UF X e gerar o desacordo de um xml gerando na UF Y, sendo o evento, portando, enviado para UF Y</param>
+        /// <param name="orgaoEmissor">Sempre considera a UF que gerou o xml. Então a empresa pode estar configurada para uma UF X e gerar o desacordo de um xml gerado na UF Y, sendo o evento, portanto, enviado para UF Y</param>
         /// <returns></returns>
         public retEventoCTe Discordar(ConfiguracaoServico configuracaoServico = null, DFe.Classes.Entidades.Estado? orgaoEmissor = null)
         {
@@ -76,10 +76,10 @@ namespace CTe.Servicos.Eventos
         }
 
         /// <summary>
-        /// Gera o evento de cancelamento de desacordo de CTe
+        /// Gera o evento de desacordo de CTe de forma assíncrona
         /// </summary>
         /// <param name="configuracaoServico"></param>
-        /// <param name="orgaoEmissor">Sempre considera a UF que gerou o xml. Então a empresa pode estar configurada para uma UF X e gerar o cancelamento para um xml gerado na UF Y, sendo o evento, portanto, enviado para UF Y</param>
+        /// <param name="orgaoEmissor">Sempre considera a UF que gerou o xml. Então a empresa pode estar configurada para uma UF X e gerar o desacordo de um xml gerado na UF Y, sendo o evento, portanto, enviado para UF Y</param>
         /// <returns></returns>
         public async Task<retEventoCTe> DiscordarAsync(ConfiguracaoServico configuracaoServico = null, DFe.Classes.Entidades.Estado? orgaoEmissor = null)
         {

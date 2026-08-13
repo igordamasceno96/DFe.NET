@@ -88,7 +88,7 @@ namespace NFe.Classes.Servicos.DistribuicaoDFe
             get { return _cPF; }
             set
             {
-                if (string.IsNullOrEmpty(value)) 
+                if (string.IsNullOrEmpty(value))
                     return;
                 if (!string.IsNullOrEmpty(_cNPJ))
                     throw new ArgumentException(ErroCpfCnpjPreenchidos);

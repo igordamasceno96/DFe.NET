@@ -29,7 +29,7 @@ namespace CTe.CTeOSDocumento.CTe.CTeOS.Informacoes.Impostos
         /// <summary>
         /// O total geral do DFe deverá ser a soma do total da prestação + IBS + CBS
         ///     vTotDFe = vPrest / vTPrest + gIBSCBS / vIBS + gCBS / vCBS
-        /// 
+        ///
         /// Exceção: Em 2026 não somar IBS e CBS
         /// Observação: Implementação futura
         /// </summary>
