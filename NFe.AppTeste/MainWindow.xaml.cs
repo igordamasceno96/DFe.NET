@@ -2107,7 +2107,7 @@ namespace NFe.AppTeste
                         {
                             qTrib = 1,
                             uTrib = "PC",
-                            pISEspec = 0,
+                            adRemIS = 0,
                             pIS = 0,
                             vIS = 0,
                             cClassTribIS = "000001",
